@@ -1,7 +1,14 @@
+#Author : Nikhil Garg
+#  changelog:
+#  13 September 2019 : Created
+
+# To comment all the lines
+
+
 import pandas as pd 
 import numpy as np 
 import matplotlib.pyplot as plt 
-bankdata = pd.read_csv("C:/Users/Kartik Kulgod/Documents/Brain_Computer_Interface/Codes/pratish_feature.csv")
+bankdata = pd.read_csv("feature.csv")
 X = bankdata.drop('class',axis = 1)
 y = bankdata['class']
 from sklearn.model_selection import train_test_split
